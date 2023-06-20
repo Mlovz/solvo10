@@ -4,7 +4,7 @@ export const RegisterPage = () => {
   return (
     <div className="auth">
       <div className="auth_box">
-        <h1>Register</h1>
+        <h1>Регистрация</h1>
 
         <form>
           <input type="text" placeholder="Username" />

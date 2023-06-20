@@ -28,34 +28,3 @@ ol {
 a {
   text-decoration: none;
 }
-
-header {
-  box-shadow: 0px 2px 50px rgba(0, 0, 0, 0.15);
-}
-
-.wrap {
-  height: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.header_logo {
-  width: 35px;
-  height: 35px;
-  border-radius: 50%;
-  background: red;
-}
-
-.header_btns {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
-
-.header_btns a {
-  border-radius: 6px;
-  background: red;
-  color: #fff;
-  padding: 8px 28px;
-}

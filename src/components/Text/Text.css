@@ -1,29 +1,39 @@
-.size12 {
+.size_12 {
   font-size: 12px;
 }
-
-.size14 {
+.size_14 {
   font-size: 14px;
 }
-
-.size16 {
+.size_16 {
   font-size: 16px;
 }
-
-.size18 {
+.size_18 {
   font-size: 18px;
 }
-
-.size20 {
+.size_20 {
   font-size: 20px;
 }
 
-.text_center {
-  text-align: center;
+.fw300 {
+  font-weight: 300;
 }
-.text_left {
-  text-align: left;
+.fw400 {
+  font-weight: 400;
 }
-.text_right {
-  text-align: right;
+.fw500 {
+  font-weight: 500;
+}
+.fw700 {
+  font-weight: 700;
+}
+.fw900 {
+  font-weight: 900;
+}
+
+.error {
+  color: red;
+}
+
+.success {
+  color: green;
 }

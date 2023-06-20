@@ -1,42 +1,53 @@
 import React from "react";
 import "./Text.css";
 
-export const Text = ({ as, size, align = "center", children }) => {
-  const sizeClasses = {
-    12: "size12",
-    14: "size14",
-    16: "size16",
-    18: "size18",
-    20: "size20",
-  };
-  const alignClasses = {
-    center: "text_center",
-    left: "text_left",
-    right: "text_right",
-  };
+const sizeClasses = {
+  12: "size_12",
+  14: "size_14",
+  16: "size_16",
+  18: "size_18",
+  20: "size_20",
+};
 
+const fwClasses = {
+  300: "fw300",
+  400: "fw400",
+  500: "fw500",
+  700: "fw700",
+  900: "fw900",
+};
+
+const Text = ({
+  as = "p",
+  size = sizeClasses[16],
+  fw = fwClasses[400],
+  variant,
+  children,
+}) => {
   return (
     <>
+      {as === "h2" && (
+        <h2 className={`${sizeClasses[size]} ${fwClasses[fw]} ${variant}`}>
+          {children}
+        </h2>
+      )}
+      {as === "h3" && (
+        <h3 className={`${sizeClasses[size]} ${fwClasses[fw]} ${variant}`}>
+          {children}
+        </h3>
+      )}
       {as === "span" && (
-        <span className={`${sizeClasses[size]} ${alignClasses[align]}`}>
+        <span className={`${sizeClasses[size]} ${fwClasses[fw]} ${variant}`}>
           {children}
         </span>
       )}
       {as === "p" && (
-        <p className={`${sizeClasses[size]} ${alignClasses[align]}`}>
+        <p className={`${sizeClasses[size]} ${fwClasses[fw]} ${variant}`}>
           {children}
         </p>
-      )}
-      {as === "h1" && (
-        <h1 className={`${sizeClasses[size]} ${alignClasses[align]}`}>
-          {children}
-        </h1>
-      )}
-      {as === "h2" && (
-        <h2 className={`${sizeClasses[size]} ${alignClasses[align]}`}>
-          {children}
-        </h2>
       )}
     </>
   );
 };
+
+export default Text;

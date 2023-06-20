@@ -1,0 +1,43 @@
+.auth {
+  display: flex;
+  justify-content: center;
+}
+
+.auth_box {
+  max-width: 300px;
+  width: 100%;
+  background: #ffffff;
+  border: 1px solid #e8e8e8;
+  border-radius: 5px;
+  margin-top: 70px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.auth_box form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.error {
+  color: red;
+  font-size: 19px;
+  font-weight: 700;
+}
+
+.auth_box form input {
+  padding: 10px;
+  background: #f5f5f5;
+  border-radius: 5px;
+}
+
+.auth_box form button {
+  background: #d23669;
+  width: 100%;
+  border-radius: 10px;
+  color: #fff;
+  height: 30px;
+}

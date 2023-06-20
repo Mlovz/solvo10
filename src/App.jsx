@@ -2,15 +2,17 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { RegisterPage } from "./pages/RegisterPage/RegisterPage";
 import { LoginPage } from "./pages/LoginPage/LoginPage";
 import { Header } from "./components/Header/Header";
-import { Text } from "./components/Text/Text";
-import Todo from "./components/Todo/Todo";
+import { useState } from "react";
+import Text from "./components/Text/Text";
 
 function App() {
   return (
     <BrowserRouter>
-      <div className="App">
-        <Todo />
-      </div>
+      <Header />
+      <Routes>
+        <Route path="/login" element={<LoginPage />} />
+        <Route path="/register" element={<RegisterPage />} />
+      </Routes>
     </BrowserRouter>
   );
 }
